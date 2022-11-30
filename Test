@@ -69,7 +69,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
             
             infcash = Value
 
-            game:GetService("Players").LocalPlayer.Data.ScamSpeed.Value=0.1;game:GetService("Players").LocalPlayer.Data.TransferSpeed.Value=0.1;while infcash and task.wait()do if not game:GetService("Players").LocalPlayer:FindFirstChild("GeneratedNumber")then local a=game:GetService("ReplicatedStorage").Events.GenerateNumber:FireServer()wait()else local b={[1]=game:GetService("Players").LocalPlayer.GeneratedNumber.Value}game:GetService("ReplicatedStorage").Events.CheckNumber:FireServer(unpack(b))end end
+            game:GetService("Players").LocalPlayer.Data.ScamSpeed.Value=15;game:GetService("Players").LocalPlayer.Data.TransferSpeed.Value=0.1;while infcash and task.wait()do if not game:GetService("Players").LocalPlayer:FindFirstChild("GeneratedNumber")then local a=game:GetService("ReplicatedStorage").Events.GenerateNumber:FireServer()wait()else local b={[1]=game:GetService("Players").LocalPlayer.GeneratedNumber.Value}game:GetService("ReplicatedStorage").Events.CheckNumber:FireServer(unpack(b))end end
 
         end,
     })
@@ -145,7 +145,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 
             if tonumber(Text) ~= nil then
 
-                game:GetService("Players").LocalPlayer.leaderstats.Scams.Value = tonumber(Text)
+                game:GetService("Players").LocalPlayer.leaderstats.Clout.Value = tonumber(Text)
 
             end
 
