@@ -11,7 +11,7 @@
 ]]
 
 getgenv().infcash = false
-getgenv().Version = "v1.0"
+getgenv().Version = "v2.0"
 
 game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Notifications").Enabled = false
 
